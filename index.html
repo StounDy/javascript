@@ -1,12 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Esteban Gutierrez</title>
+
+  <!--Estilos-->
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+
+
 </head>
+
 <body>
-<script src="./java.js"></script>
+
+
+
+
+
+
+  <!--NAVBAR-->
+  <header class="container-fluid bg-dark position-sticky top-0">
+
+    <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+          role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-productos-tab" data-bs-toggle="pill" data-bs-target="#pills-productos"
+          type="button" role="tab" aria-controls="pills-productos" aria-selected="false">Productos</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-carrito-tab" data-bs-toggle="pill" data-bs-target="#pills-carrito" type="button"
+          role="tab" aria-controls="pills-carrito" aria-selected="false">Carrito</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="pills-componentes-tab" data-bs-toggle="pill" data-bs-target="#pills-componentes"
+          type="button" role="tab" aria-controls="pills-componentes" aria-selected="false">Componentes</a>
+      </li>
+    </ul>
+  </header>
+
+
+  <!--DIVS CON CONTENIDOS-->
+
+  <div class="tab-content" id="pills-tabContent">
+
+
+    <!--SECCION HOME-->
+    <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="carousel slide" id="mainSlider" data-bs-ride="carousel">
+
+
+        <!--Carrousel-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carrousel1.jpg" class="d-block w-100" alt="carr1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrousel2.jpg" class="d-block w-100" alt="carr2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrousel3.png" class="d-block w-100" alt="carr3">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!--SECCION PRODUCTOS-->
+
+    <div class="tab-pane fade show active container" id="pills-productos" role="tabpanel"
+      aria-labelledby="pills-productos-tab">
+      <h2 class=" m-4 text-light bg-dark "> Productos </h2>
+
+      <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">ELDEN RING</h5>
+            <img src="img/eldenring.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1200</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">GOD OF WAR</h5>
+            <img src="img/god of war.png" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">GUILTY GEAR: STRIVE</h5>
+            <img src="img/guilty gear strive.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1200</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">GUARDIANS OF THE GALAXY</h5>
+            <img src="img/marvel.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio:<span class="text-white-50">$ARS</span> <span class="precio text-white">1300</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">BLOODBORNE</h5>
+            <img src="img/bloodborne.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1200</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">RESIDENT EVIL 3</h5>
+            <img src="img/re3.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1270</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">CYBERPUNK 2077</h5>
+            <img src="img/cp2077.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1500</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+            <h5 class="card-title pt-2 text-center text-primary">DEATH STRANDING</h5>
+            <img src="img/death stranding.jpg" class="card-img-top" alt="1">
+            <div class="card-body">
+
+              <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
+                up the bulk of the card's content.</p>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1200</span></h5>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <!--SECCION CARRITO-->
+
+    <div class="tab-pane fade carrito" id="pills-carrito" role="tabpanel" aria-labelledby="pills-carrito-tab">
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary"></tr>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+
+        </tbody>
+      </table>
+      <br><br>
+
+
+      <div class="row mx-4" style="background-color: black;">
+        <div class="col">
+          <h3 class="itemCartTotal text-white" style="font-weight: bolder;">Total: 0</h3>
+          <div>
+            <div class="col d-flex justify-content-end">
+              <button class="btn btn-success">COMPRAR</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+    <!--SECCION COMPONENTES-->
+
+
+    
+
+    <div class="tab-pane fade text-white" id="pills-componentes" role="tabpanel"
+      aria-labelledby="pills-componentes-tab">
+    
+      <h1 class="miEstilo text-white-50">Lo ultimo en Gaming</h1>
+      <hr   size="5px" color="black" >
+
+    <div class="contenido">
+      
+    </div>
+   
+
+    
+
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+
+
+  <!--FOOTER-->
+
+
+
+  <footer class="bg-dark p-3 mt-5">
+    <p class="text-center m-0 text-muted">Copyright © 2022 Esteban Gutierrez | Todos los derechos reservados</p>
+  </footer>
+
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script src="js/eventos.js"></script>
+  <script src="js/html.js"></script>
+
+
+
 </body>
+
 </html>
