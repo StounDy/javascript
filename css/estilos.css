@@ -10,16 +10,14 @@ body{
     
 }
 
-header{
+header, .alert{
     z-index: 100;
     font-weight: bolder;
     font-style: oblique;
     
 }
 
-footer{
-    background-color: white;
-}
+
 
 .description{
     height: 25px;
@@ -157,6 +155,9 @@ text-align: center;
     font-size: small;
 }
 
+.hide , .remove{
+    display: none;
+    
+}
 
-/*jquery*/
 

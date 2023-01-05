@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto de JavaScript Esteban Gutierrez</title>
+  <title>Proyecto de JavaScript Gutierrez Esteban</title>
 
   <!--Estilos-->
 
@@ -15,6 +15,7 @@
 
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 </head>
@@ -46,9 +47,18 @@
       <li class="nav-item" role="presentation">
         <a class="nav-link" id="pills-componentes-tab" data-bs-toggle="pill" data-bs-target="#pills-componentes"
           type="button" role="tab" aria-controls="pills-componentes" aria-selected="false">Componentes</a>
-      </li>
+      </li>      
     </ul>
   </header>
+
+    <!--Alert de añadir producto-->
+  <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Añadiste un producto al carrito de compras!
+  </div>
+  <!--Alert de remover producto-->
+  <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+    Removiste un producto del carrito de compras!
+  </div>
   
 
   <!--DIVS CON CONTENIDOS-->
@@ -98,7 +108,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1700</span></h5>
+              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1600</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button" id="fadeOut">Añadir a Carrito</button>
               </div>
@@ -143,7 +153,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1350</span></h5>
+              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1300</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -188,7 +198,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1000</span></h5>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1300</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -203,7 +213,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1200</span></h5>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1100</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -281,23 +291,24 @@
       
       
       <button class="btn btn-danger button text-center" id="remover">Remover/Añadir Listado</button>
+      <div class="contenido" id="sonidos"><audio src="click.mp3"></audio></div>
+      
+      <!--cargar contenido externo-->
+      
+      <div id="contenido" style="margin-top: 1rem;">
+      <button type="button" id="btnCargar" class="btn btn-danger button text-center">Ver noticias..</button>
+      </div>
       
       
     
       
 
-    <div class="contenido" id="sonidos"><audio src="click.mp3"></audio>
-      
-    </div>
+   
 
-  
-
-    
-  
-    
 
 
   </div>
+
 
 
   </div>
@@ -325,6 +336,8 @@
   <script src="js/eventos.js"></script>
   <script src="js/html.js"></script>
   <script src="js/clase13.js"></script>
+  <script src="js/contenido.js"></script>
+  
   
 
   
