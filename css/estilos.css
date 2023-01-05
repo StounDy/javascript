@@ -5,7 +5,7 @@
 
 
 body{
-    background-image: url(../img/morao.jpg);
+    background-image: url('../img/WallpaperBG5.jpg');
     background-size: 180rem;
     
 }
@@ -104,7 +104,15 @@ text-align: center;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    
+}
 
+.contenido2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 .card{
@@ -148,3 +156,7 @@ text-align: center;
 .offerText{
     font-size: small;
 }
+
+
+/*jquery*/
+

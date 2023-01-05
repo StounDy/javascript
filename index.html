@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Esteban Gutierrez</title>
+  <title>Proyecto de JavaScript Esteban Gutierrez</title>
 
   <!--Estilos-->
 
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://bootswatch.com/5/vapor/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
 </head>
@@ -26,6 +28,7 @@
 
   <!--NAVBAR-->
   <header class="container-fluid bg-dark position-sticky top-0">
+  
 
     <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -46,7 +49,7 @@
       </li>
     </ul>
   </header>
-
+  
 
   <!--DIVS CON CONTENIDOS-->
 
@@ -83,21 +86,21 @@
 
     <div class="tab-pane fade show active container" id="pills-productos" role="tabpanel"
       aria-labelledby="pills-productos-tab">
-      <h2 class=" m-4 text-light bg-dark "> Productos </h2>
+      <h2 class=" m-4 text-light text-center"> Productos </h2>
 
       <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
 
         <div class="col d-flex justify-content-center mb-4">
-          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+          <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;" id="caja">
             <h5 class="card-title pt-2 text-center text-primary">ELDEN RING</h5>
             <img src="img/eldenring.jpg" class="card-img-top" alt="1">
             <div class="card-body">
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1200</span></h5>
+              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1700</span></h5>
               <div class="d-grid gap-2">
-                <button class="btn btn-primary button">Añadir a Carrito</button>
+                <button class="btn btn-primary button" id="fadeOut">Añadir a Carrito</button>
               </div>
             </div>
           </div>
@@ -112,7 +115,7 @@
                 up the bulk of the card's content.</p>
               <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1500</span></h5>
               <div class="d-grid gap-2">
-                <button class="btn btn-primary button">Añadir a Carrito</button>
+                <button class="btn btn-primary button fadeIn">Añadir a Carrito</button>
               </div>
             </div>
           </div>
@@ -125,9 +128,9 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1200</span></h5>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1500</span></h5>
               <div class="d-grid gap-2">
-                <button class="btn btn-primary button">Añadir a Carrito</button>
+                <button class="btn btn-primary button fadeTog">Añadir a Carrito</button>
               </div>
             </div>
           </div>
@@ -140,7 +143,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio:<span class="text-white-50">$ARS</span> <span class="precio text-white">1300</span></h5>
+              <h5 class="text-primary">Precio:<span class="text-white-50">$MXN</span> <span class="precio text-white">1350</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -155,7 +158,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1200</span></h5>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1500</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -170,7 +173,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1270</span></h5>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1200</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -185,7 +188,7 @@
 
               <p class="card-text text-white-50 description">Some quick example text to build on the card title and make
                 up the bulk of the card's content.</p>
-              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1500</span></h5>
+              <h5 class="text-primary">Precio: <span class="text-white-50">$MXN</span><span class="precio text-white">1000</span></h5>
               <div class="d-grid gap-2">
                 <button class="btn btn-primary button">Añadir a Carrito</button>
               </div>
@@ -273,11 +276,24 @@
       <h1 class="miEstilo text-white-50">Lo ultimo en Gaming</h1>
       <hr   size="5px" color="black" >
 
-    <div class="contenido">
+
+
+      
+      
+      <button class="btn btn-danger button text-center" id="remover">Remover/Añadir Listado</button>
+      
+      
+    
+      
+
+    <div class="contenido" id="sonidos"><audio src="click.mp3"></audio>
       
     </div>
-   
 
+  
+
+    
+  
     
 
 
@@ -291,19 +307,16 @@
 
 
 
-
   <!--FOOTER-->
 
 
 
   <footer class="bg-dark p-3 mt-5">
-    <p class="text-center m-0 text-muted">Copyright © 2022 Esteban Gutierrez | Todos los derechos reservados</p>
+    <p class="text-center m-0 text-muted">Copyright © 2022 Gutierrez Esteban | Todos los derechos reservados</p>
   </footer>
 
 
-  <!-- JQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+  
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -311,8 +324,10 @@
   </script>
   <script src="js/eventos.js"></script>
   <script src="js/html.js"></script>
+  <script src="js/clase13.js"></script>
+  
 
-
+  
 
 </body>
 
